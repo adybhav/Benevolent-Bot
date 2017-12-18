@@ -1,1 +1,1 @@
-## Hunger Decider Bot
+## Benevolent Bot
