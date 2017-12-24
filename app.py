@@ -1,6 +1,7 @@
 import os
 import sys
 import json
+from datetime import datetime
 
 import requests
 from flask import Flask, request
@@ -39,7 +40,7 @@ def webhook():
                     recipient_id = messaging_event["recipient"]["id"]  # the recipient's ID, which should be your page's facebook ID
                     message_text = messaging_event["message"]["text"]  # the message's text
 
-                    send_message(sender_id, "got it, thanks!")
+                    send_message(sender_id, "roger that!")
 
                 if messaging_event.get("delivery"):  # delivery confirmation
                     pass
@@ -77,8 +78,15 @@ def send_message(recipient_id, message_text):
         log(r.text)
 
 
-def log(message):  # simple wrapper for logging to stdout on heroku
-    print str(message)
+def log(msg, *args, **kwargs):  # simple wrapper for logging to stdout on heroku
+    try:
+        if type(msg) is dict:
+            msg = json.dumps(msg)
+        else:
+            msg = unicode(msg).format(*args, **kwargs)
+        print u"{}: {}".format(datetime.now(), msg)
+    except UnicodeEncodeError:
+        pass  # squash logging errors in case of non-ascii text
     sys.stdout.flush()
 
 
