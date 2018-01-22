@@ -1,0 +1,124 @@
+2018-01-22T02:39:40.435503+00:00 app[web.1]:     rv = self.dispatch_request()
+2018-01-22T02:39:40.435504+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+2018-01-22T02:39:40.435505+00:00 app[web.1]:     return self.view_functions[rule.endpoint](**req.view_args)
+2018-01-22T02:39:40.435506+00:00 app[web.1]:   File "/app/app.py", line 41, in webhook
+2018-01-22T02:39:40.435508+00:00 app[web.1]:     message_text = messaging_event["message"]["text"]  # the message's text
+2018-01-22T02:39:40.435509+00:00 app[web.1]: KeyError: 'text'
+2018-01-22T02:39:40.438325+00:00 heroku[router]: at=info method=POST path="/" host=gentle-journey-55328.herokuapp.com request_id=b1f283cc-71ae-4a60-b6ed-8a23427cbac8 fwd="173.252.114.117" dyno=web.1 connect=0ms service=10ms status=500 bytes=456 protocol=https
+2018-01-22T02:40:59.566848+00:00 app[web.1]: 2018-01-22 02:40:59.566726: {"object": "page", "entry": [{"messaging": [{"sender": {"id": "869331416524859"}, "recipient": {"id": "1229725550454457"}, "timestamp": 1516588065779, "message": {"mid": "mid.$cAARebdWWkdZnTPar81hG7FkbmexA", "seq": 574945, "attachments": [{"payload": {"url": "https://cdn.fbsbx.com/v/t59.2708-21/20952444_10159385697985220_623070806846472192_n.gif?oh=a4553545a4dbd3e8f2ab5fa41505dabf&oe=5A679A68"}, "type": "image"}]}}], "time": 1516588859467, "id": "1229725550454457"}]}
+2018-01-22T02:40:59.567442+00:00 app[web.1]: [2018-01-22 02:40:59,567] ERROR in app: Exception on / [POST]
+2018-01-22T02:40:59.567445+00:00 app[web.1]: Traceback (most recent call last):
+2018-01-22T02:40:59.567447+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+2018-01-22T02:40:59.567449+00:00 app[web.1]:     response = self.full_dispatch_request()
+2018-01-22T02:40:59.567451+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+2018-01-22T02:40:59.567452+00:00 app[web.1]:     rv = self.handle_user_exception(e)
+2018-01-22T02:40:59.567453+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+2018-01-22T02:40:59.567456+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+2018-01-22T02:40:59.567457+00:00 app[web.1]:     rv = self.dispatch_request()
+2018-01-22T02:40:59.567454+00:00 app[web.1]:     reraise(exc_type, exc_value, tb)
+2018-01-22T02:40:59.567459+00:00 app[web.1]:     return self.view_functions[rule.endpoint](**req.view_args)
+2018-01-22T02:40:59.567458+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+2018-01-22T02:40:59.567462+00:00 app[web.1]:     message_text = messaging_event["message"]["text"]  # the message's text
+2018-01-22T02:40:59.567464+00:00 app[web.1]: KeyError: 'text'
+2018-01-22T02:40:59.567460+00:00 app[web.1]:   File "/app/app.py", line 41, in webhook
+2018-01-22T02:40:59.568193+00:00 heroku[router]: at=info method=POST path="/" host=gentle-journey-55328.herokuapp.com request_id=bf89b1ce-6d00-4b12-ac63-0abf0dc0fbf6 fwd="69.63.188.108" dyno=web.1 connect=1ms service=3ms status=500 bytes=456 protocol=https
+2018-01-22T02:42:10.286115+00:00 heroku[router]: at=info method=POST path="/" host=gentle-journey-55328.herokuapp.com request_id=99bf7593-6787-40d8-9410-315d7f796823 fwd="173.252.100.208" dyno=web.1 connect=1ms service=8ms status=500 bytes=456 protocol=https
+2018-01-22T02:42:10.284235+00:00 app[web.1]: 2018-01-22 02:42:10.281571: {"object": "page", "entry": [{"messaging": [{"sender": {"id": "869331416524859"}, "recipient": {"id": "1229725550454457"}, "timestamp": 1516588065779, "message": {"mid": "mid.$cAARebdWWkdZnTPar81hG7FkbmexA", "seq": 574945, "attachments": [{"payload": {"url": "https://cdn.fbsbx.com/v/t59.2708-21/20952444_10159385697985220_623070806846472192_n.gif?oh=a4553545a4dbd3e8f2ab5fa41505dabf&oe=5A679A68"}, "type": "image"}]}}], "time": 1516588930133, "id": "1229725550454457"}]}
+2018-01-22T02:42:10.284821+00:00 app[web.1]: [2018-01-22 02:42:10,284] ERROR in app: Exception on / [POST]
+2018-01-22T02:42:10.284823+00:00 app[web.1]: Traceback (most recent call last):
+2018-01-22T02:42:10.284826+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+2018-01-22T02:42:10.284827+00:00 app[web.1]:     response = self.full_dispatch_request()
+2018-01-22T02:42:10.284829+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+2018-01-22T02:42:10.284830+00:00 app[web.1]:     rv = self.handle_user_exception(e)
+2018-01-22T02:42:10.284831+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+2018-01-22T02:42:10.284833+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+2018-01-22T02:42:10.284834+00:00 app[web.1]:     rv = self.dispatch_request()
+2018-01-22T02:42:10.284832+00:00 app[web.1]:     reraise(exc_type, exc_value, tb)
+2018-01-22T02:42:10.284835+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+2018-01-22T02:42:10.284836+00:00 app[web.1]:     return self.view_functions[rule.endpoint](**req.view_args)
+2018-01-22T02:42:10.284837+00:00 app[web.1]:   File "/app/app.py", line 41, in webhook
+2018-01-22T02:42:10.284839+00:00 app[web.1]:     message_text = messaging_event["message"]["text"]  # the message's text
+2018-01-22T02:42:10.284840+00:00 app[web.1]: KeyError: 'text'
+2018-01-22T02:42:24.521756+00:00 app[web.1]: 2018-01-22 02:42:24.521660: {"object": "page", "entry": [{"messaging": [{"sender": {"id": "1388501801162742"}, "recipient": {"id": "1229725550454457"}, "timestamp": 1516588943780, "message": {"mid": "mid.$cAARebf5mAyZnTQQRpFhG77JOGvLP", "seq": 1051460, "text": "hello"}}], "time": 1516588944174, "id": "1229725550454457"}]}
+2018-01-22T02:42:24.521818+00:00 app[web.1]: 2018-01-22 02:42:24.521763: sending message to 1388501801162742: roger that!
+2018-01-22T02:42:24.865537+00:00 heroku[router]: at=info method=POST path="/" host=gentle-journey-55328.herokuapp.com request_id=e33c4744-44ac-4607-b848-c508170442a5 fwd="173.252.80.116" dyno=web.1 connect=0ms service=348ms status=200 bytes=161 protocol=https
+2018-01-22T02:43:29.456761+00:00 heroku[router]: at=info method=POST path="/" host=gentle-journey-55328.herokuapp.com request_id=6655dc6c-aed4-43bc-89f5-04d5143b6e6c fwd="173.252.100.199" dyno=web.1 connect=1ms service=3ms status=500 bytes=456 protocol=https
+2018-01-22T02:43:29.453624+00:00 app[web.1]: 2018-01-22 02:43:29.453537: {"object": "page", "entry": [{"messaging": [{"sender": {"id": "869331416524859"}, "recipient": {"id": "1229725550454457"}, "timestamp": 1516588065779, "message": {"mid": "mid.$cAARebdWWkdZnTPar81hG7FkbmexA", "seq": 574945, "attachments": [{"payload": {"url": "https://cdn.fbsbx.com/v/t59.2708-21/20952444_10159385697985220_623070806846472192_n.gif?oh=a4553545a4dbd3e8f2ab5fa41505dabf&oe=5A679A68"}, "type": "image"}]}}], "time": 1516589009352, "id": "1229725550454457"}]}
+2018-01-22T02:43:29.454076+00:00 app[web.1]: [2018-01-22 02:43:29,453] ERROR in app: Exception on / [POST]
+2018-01-22T02:43:29.454079+00:00 app[web.1]: Traceback (most recent call last):
+2018-01-22T02:43:29.454081+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+2018-01-22T02:43:29.454082+00:00 app[web.1]:     response = self.full_dispatch_request()
+2018-01-22T02:43:29.454084+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+2018-01-22T02:43:29.454086+00:00 app[web.1]:     rv = self.handle_user_exception(e)
+2018-01-22T02:43:29.454087+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+2018-01-22T02:43:29.454088+00:00 app[web.1]:     reraise(exc_type, exc_value, tb)
+2018-01-22T02:43:29.454089+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+2018-01-22T02:43:29.454091+00:00 app[web.1]:     rv = self.dispatch_request()
+2018-01-22T02:43:29.454093+00:00 app[web.1]:     return self.view_functions[rule.endpoint](**req.view_args)
+2018-01-22T02:43:29.454092+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+2018-01-22T02:43:29.454094+00:00 app[web.1]:   File "/app/app.py", line 41, in webhook
+2018-01-22T02:43:29.454098+00:00 app[web.1]: KeyError: 'text'
+2018-01-22T02:43:29.454096+00:00 app[web.1]:     message_text = messaging_event["message"]["text"]  # the message's text
+2018-01-22T02:44:52.583858+00:00 heroku[router]: at=info method=POST path="/" host=gentle-journey-55328.herokuapp.com request_id=54fcdfae-37d4-4b77-b944-91144f9f0f46 fwd="173.252.115.166" dyno=web.1 connect=1ms service=5ms status=500 bytes=456 protocol=https
+2018-01-22T02:44:52.581175+00:00 app[web.1]: 2018-01-22 02:44:52.581056: {"object": "page", "entry": [{"messaging": [{"sender": {"id": "869331416524859"}, "recipient": {"id": "1229725550454457"}, "timestamp": 1516588065779, "message": {"mid": "mid.$cAARebdWWkdZnTPar81hG7FkbmexA", "seq": 574945, "attachments": [{"payload": {"url": "https://cdn.fbsbx.com/v/t59.2708-21/20952444_10159385697985220_623070806846472192_n.gif?oh=a4553545a4dbd3e8f2ab5fa41505dabf&oe=5A679A68"}, "type": "image"}]}}], "time": 1516589092438, "id": "1229725550454457"}]}
+2018-01-22T02:44:52.581969+00:00 app[web.1]: [2018-01-22 02:44:52,581] ERROR in app: Exception on / [POST]
+2018-01-22T02:44:52.581972+00:00 app[web.1]: Traceback (most recent call last):
+2018-01-22T02:44:52.581974+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+2018-01-22T02:44:52.581976+00:00 app[web.1]:     response = self.full_dispatch_request()
+2018-01-22T02:44:52.581978+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+2018-01-22T02:44:52.581979+00:00 app[web.1]:     rv = self.handle_user_exception(e)
+2018-01-22T02:44:52.581981+00:00 app[web.1]:     reraise(exc_type, exc_value, tb)
+2018-01-22T02:44:52.581980+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+2018-01-22T02:44:52.581983+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+2018-01-22T02:44:52.581984+00:00 app[web.1]:     rv = self.dispatch_request()
+2018-01-22T02:44:52.581985+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+2018-01-22T02:44:52.581986+00:00 app[web.1]:     return self.view_functions[rule.endpoint](**req.view_args)
+2018-01-22T02:44:52.581987+00:00 app[web.1]:   File "/app/app.py", line 41, in webhook
+2018-01-22T02:44:52.581989+00:00 app[web.1]:     message_text = messaging_event["message"]["text"]  # the message's text
+2018-01-22T02:44:52.581991+00:00 app[web.1]: KeyError: 'text'
+2018-01-22T02:45:56.093615+00:00 app[web.1]: 2018-01-22 02:45:56.093482: {"object": "page", "entry": [{"messaging": [{"sender": {"id": "1388501801162742"}, "recipient": {"id": "1229725550454457"}, "timestamp": 1516589155380, "message": {"mid": "mid.$cAARebf5mAyZnTQdMNFhG8IDtratS", "seq": 1051512, "text": "LOG TEST 1"}}], "time": 1516589155803, "id": "1229725550454457"}]}
+2018-01-22T02:45:56.093736+00:00 app[web.1]: 2018-01-22 02:45:56.093675: sending message to 1388501801162742: roger that!
+2018-01-22T02:45:56.590140+00:00 heroku[router]: at=info method=POST path="/" host=gentle-journey-55328.herokuapp.com request_id=f80019be-f3a0-427b-b4ad-0ba69527a1be fwd="69.171.224.212" dyno=web.1 connect=0ms service=502ms status=200 bytes=161 protocol=https
+2018-01-22T02:46:17.178991+00:00 heroku[router]: at=info method=POST path="/" host=gentle-journey-55328.herokuapp.com request_id=5f7270c4-5fd3-47f1-b04c-3bf7fd621902 fwd="173.252.115.90" dyno=web.1 connect=1ms service=4ms status=500 bytes=456 protocol=https
+2018-01-22T02:46:17.176997+00:00 app[web.1]: 2018-01-22 02:46:17.176903: {"object": "page", "entry": [{"messaging": [{"sender": {"id": "869331416524859"}, "recipient": {"id": "1229725550454457"}, "timestamp": 1516588065779, "message": {"mid": "mid.$cAARebdWWkdZnTPar81hG7FkbmexA", "seq": 574945, "attachments": [{"payload": {"url": "https://cdn.fbsbx.com/v/t59.2708-21/20952444_10159385697985220_623070806846472192_n.gif?oh=a4553545a4dbd3e8f2ab5fa41505dabf&oe=5A679A68"}, "type": "image"}]}}], "time": 1516589177083, "id": "1229725550454457"}]}
+2018-01-22T02:46:17.177605+00:00 app[web.1]: [2018-01-22 02:46:17,177] ERROR in app: Exception on / [POST]
+2018-01-22T02:46:17.177608+00:00 app[web.1]: Traceback (most recent call last):
+2018-01-22T02:46:17.177609+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+2018-01-22T02:46:17.177610+00:00 app[web.1]:     response = self.full_dispatch_request()
+2018-01-22T02:46:17.177612+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+2018-01-22T02:46:17.177613+00:00 app[web.1]:     rv = self.handle_user_exception(e)
+2018-01-22T02:46:17.177614+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+2018-01-22T02:46:17.177615+00:00 app[web.1]:     reraise(exc_type, exc_value, tb)
+2018-01-22T02:46:17.177617+00:00 app[web.1]:     rv = self.dispatch_request()
+2018-01-22T02:46:17.177618+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+2018-01-22T02:46:17.177616+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+2018-01-22T02:46:17.177621+00:00 app[web.1]:   File "/app/app.py", line 41, in webhook
+2018-01-22T02:46:17.177624+00:00 app[web.1]: KeyError: 'text'
+2018-01-22T02:46:17.177620+00:00 app[web.1]:     return self.view_functions[rule.endpoint](**req.view_args)
+2018-01-22T02:46:17.177622+00:00 app[web.1]:     message_text = messaging_event["message"]["text"]  # the message's text
+2018-01-22T02:46:55.092108+00:00 app[web.1]: 2018-01-22 02:46:55.091959: {"object": "page", "entry": [{"messaging": [{"sender": {"id": "1388501801162742"}, "recipient": {"id": "1229725550454457"}, "timestamp": 1516589214377, "message": {"mid": "mid.$cAARebf5mAyZnTQgyqVhG8LqFyg6R", "seq": 1051516, "text": "LOG TEST 1"}}], "time": 1516589214763, "id": "1229725550454457"}]}
+2018-01-22T02:46:55.092181+00:00 app[web.1]: 2018-01-22 02:46:55.092125: sending message to 1388501801162742: roger that!
+2018-01-22T02:46:55.409945+00:00 heroku[router]: at=info method=POST path="/" host=gentle-journey-55328.herokuapp.com request_id=771a6b77-6e23-4d4e-9f25-e8602a14be00 fwd="69.171.225.158" dyno=web.1 connect=0ms service=322ms status=200 bytes=161 protocol=https
+2018-01-22T02:47:06.917969+00:00 app[web.1]: 2018-01-22 02:47:06.917861: {"object": "page", "entry": [{"messaging": [{"sender": {"id": "1388501801162742"}, "recipient": {"id": "1229725550454457"}, "timestamp": 1516589226184, "message": {"mid": "mid.$cAARebf5mAyZnTQhgyFhG8MYSpi-C", "seq": 1051523, "text": "LOG TEST 2"}}], "time": 1516589226586, "id": "1229725550454457"}]}
+2018-01-22T02:47:06.918018+00:00 app[web.1]: 2018-01-22 02:47:06.917970: sending message to 1388501801162742: roger that!
+2018-01-22T02:47:07.208006+00:00 heroku[router]: at=info method=POST path="/" host=gentle-journey-55328.herokuapp.com request_id=6a866dfe-ab0f-422c-a149-ecdfbb44a6de fwd="69.171.225.46" dyno=web.1 connect=1ms service=294ms status=200 bytes=161 protocol=https
+2018-01-22T02:47:30.598227+00:00 app[web.1]: 2018-01-22 02:47:30.596728: {"object": "page", "entry": [{"messaging": [{"sender": {"id": "1388501801162742"}, "recipient": {"id": "1229725550454457"}, "timestamp": 1516589249859, "message": {"mid": "mid.$cAARebf5mAyZnTQi9Q1hG8N05c0nG", "seq": 1051528, "text": "LOG TEST 3"}}], "time": 1516589250263, "id": "1229725550454457"}]}
+2018-01-22T02:47:30.598337+00:00 app[web.1]: 2018-01-22 02:47:30.598284: sending message to 1388501801162742: roger that!
+2018-01-22T02:47:30.910849+00:00 heroku[router]: at=info method=POST path="/" host=gentle-journey-55328.herokuapp.com request_id=a98d5572-0777-4652-911d-f3ab94d59540 fwd="66.220.146.31" dyno=web.1 connect=1ms service=325ms status=200 bytes=161 protocol=https
+2018-01-22T02:47:40.960864+00:00 app[web.1]: 2018-01-22 02:47:40.960759: {"object": "page", "entry": [{"messaging": [{"sender": {"id": "869331416524859"}, "recipient": {"id": "1229725550454457"}, "timestamp": 1516588065779, "message": {"mid": "mid.$cAARebdWWkdZnTPar81hG7FkbmexA", "seq": 574945, "attachments": [{"payload": {"url": "https://cdn.fbsbx.com/v/t59.2708-21/20952444_10159385697985220_623070806846472192_n.gif?oh=a4553545a4dbd3e8f2ab5fa41505dabf&oe=5A679A68"}, "type": "image"}]}}], "time": 1516589260885, "id": "1229725550454457"}]}
+2018-01-22T02:47:40.961433+00:00 app[web.1]: [2018-01-22 02:47:40,961] ERROR in app: Exception on / [POST]
+2018-01-22T02:47:40.961435+00:00 app[web.1]: Traceback (most recent call last):
+2018-01-22T02:47:40.961437+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1988, in wsgi_app
+2018-01-22T02:47:40.961437+00:00 app[web.1]:     response = self.full_dispatch_request()
+2018-01-22T02:47:40.961439+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1641, in full_dispatch_request
+2018-01-22T02:47:40.961440+00:00 app[web.1]:     rv = self.handle_user_exception(e)
+2018-01-22T02:47:40.961441+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1544, in handle_user_exception
+2018-01-22T02:47:40.961442+00:00 app[web.1]:     reraise(exc_type, exc_value, tb)
+2018-01-22T02:47:40.961443+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1639, in full_dispatch_request
+2018-01-22T02:47:40.961445+00:00 app[web.1]:     rv = self.dispatch_request()
+2018-01-22T02:47:40.961446+00:00 app[web.1]:   File "/app/.heroku/python/lib/python2.7/site-packages/flask/app.py", line 1625, in dispatch_request
+2018-01-22T02:47:40.961447+00:00 app[web.1]:     return self.view_functions[rule.endpoint](**req.view_args)
+2018-01-22T02:47:40.961448+00:00 app[web.1]:   File "/app/app.py", line 41, in webhook
+2018-01-22T02:47:40.961449+00:00 app[web.1]:     message_text = messaging_event["message"]["text"]  # the message's text
+2018-01-22T02:47:40.961451+00:00 app[web.1]: KeyError: 'text'
+2018-01-22T02:47:40.962628+00:00 heroku[router]: at=info method=POST path="/" host=gentle-journey-55328.herokuapp.com request_id=fa862f4a-9e3f-4b8a-a000-6236889f03da fwd="173.252.98.206" dyno=web.1 connect=1ms service=4ms status=500 bytes=456 protocol=https
